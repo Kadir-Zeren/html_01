@@ -6,6 +6,18 @@
     <meta name="description" content="key words" />
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <title>This is title</title>
+    <!-- External -->
+    <link rel="stylesheet" href="still.css" />
+    <style>
+      .par {
+        /* Internal */
+        color: white;
+        background-color: red;
+      }
+      #container {
+        border: 2px solid yellowgreen;
+      }
+    </style>
   </head>
   <body>
     <h1>This is h1 tag</h1>
@@ -15,23 +27,39 @@
     <h5>This is h5 tag</h5>
     <h6>This is h6 tag</h6>
 
-    <div>
+    <div id="container">
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis optio
         dignissimos consequuntur assumenda eligendi quod ratione, perspiciatis
         quia illum esse sit, facere, culpa sunt! Quod repellendus quasi culpa
         officiis in!
       </p>
-      <p>
+      <!-- Inline -->
+      <p style="color: pink; background-color: aquamarine">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         eos esse minus delectus placeat assumenda fugit et cumque eum nostrum,
         illum non. Laborum quae cum est commodi, culpa reprehenderit quos.
       </p>
-      <p>
+      <p class="par">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tempora
         quisquam sequi incidunt et repellat corrupti, nemo eius doloribus, nobis
         est quae veniam vitae at voluptatibus animi. Vel, libero commodi!
       </p>
     </div>
+
+    <section>
+      Lorem ipsum dolor sit amet <mark>consectetu</mark> r adipisicing
+      <u>elit.</u> Porro provident rerum, architecto
+      <del>eritatis, </del> aliquam <strong> consequatur</strong> dolore
+      recusandae v
+      <em>pariatur</em>
+      quisquam ipsum repellat. Similique repudiandae illum sequi modi
+      perferendis obcaecati quo facilis!
+    </section>
+
+    <article>
+      Lorem ipsum dolor sit amet
+      <span style="color: red">consectetur</span> adipisicing.
+    </article>
   </body>
 </html>
